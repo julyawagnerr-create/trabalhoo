@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fdebed; /* Fundo rosa bebê suave */
+    color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.app {
+    background-color: #ffffff; /* Fundo branco do bloco */
+    padding: 40px;
+    border: 2px solid #f8c8dc;
+    width: 100%;
+    max-width: 550px; /* Bloco mais largo */
+}
+
+h1 {
+    color: #d87093;
+    font-size: 2rem; /* Título maior */
+    margin-bottom: 28px;
+    text-align: center;
+}
+
+.entrada {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 14px 16px; /* Campo de texto maior */
+    border: 2px solid #f8c8dc;
+    border-radius: 0;
+    font-size: 1.1rem; /* Fonte maior */
+    outline: none;
+}
+
+input[type="text"]:focus {
+    border-color: #e38aa6;
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+    border: none;
+    border-radius: 0;
+    font-size: 1.05rem;
+}
+
+#adicionar {
+    background-color: #f4abbf;
+    color: #ffffff;
+    padding: 14px 24px; /* Botão maior */
+    font-weight: bold;
+}
+
+#adicionar:hover {
+    background-color: #e38aa6;
+}
+
+#tema {
+    background-color: #f4abbf;
+    color: #ffffff;
+    padding: 14px;
+    font-weight: bold;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+#tema:hover {
+    background-color: #e38aa6;
+}
+
+.mensagem {
+    color: #d87093;
+    font-size: 1rem;
+    min-height: 24px;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.lista {
+    list-style: none;
+    margin-bottom: 24px;
+}
+
+.lista li {
+    background-color: #fff0f3;
+    border: 2px solid #f8c8dc;
+    border-radius: 0;
+    margin-bottom: 12px;
+    padding: 16px 18px; /* Item da lista com mais espaço interno */
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lista li span {
+    cursor: pointer;
+    word-break: break-word;
+}
+
+/* Marcação para tarefa concluída */
+.lista li.concluida span {
+    text-decoration: line-through;
+    color: #a0a0a0;
+}
+
+.remover {
+    background-color: #ffb3c1;
+    color: #ffffff;
+    padding: 8px 14px;
+    font-size: 0.95rem;
+    margin-left: 12px;
+}
+
+.remover:hover {
+    background-color: #ff85a1;
+}
+
+.contador {
+    font-size: 1rem;
+    color: #666666;
+    text-align: center;
+}
